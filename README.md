@@ -7,7 +7,7 @@
 ## 🧠 The Architecture & Tech Stack
 To bypass hardware limitations when running Pandas optimizations on massive historical datasets, the architecture was explicitly decoupled:
 * **Data Storage:** Raw data is partitioned by betting market into highly compressed `.parquet` files for rapid I/O memory loading.
-* **Compute Engine:** Optuna handles hyperparameter tuning using strict Walk-Forward Optimization (WFO) to prevent historical overfitting. Hosted on a dedicated Ubuntu Linux VPS utilizing optimized SSD Swap memory.
+* **Compute Engine:** Optuna handles hyperparameter tuning using strict Walk-Forward Optimization (WFO) to prevent historical overfitting.
 * **Frontend Visualization:** A decoupled Streamlit UI powered by Plotly for granular equity curve rendering and Monte Carlo stress testing.
 
 ## ⚙️ Core Modules Built
